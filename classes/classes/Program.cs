@@ -40,7 +40,47 @@ namespace classes_asem
                 rijleraar = rijleraar,
                 tijd = 1130
             };
-            
+
+
+            LesPakket lesPakket = new LesPakket()
+            {
+                automaat = false,
+                examenPogingen = 2,
+                urenGekocht = 13,
+                urenVebruikt = 9
+            };
+
+            TheroieTest theorieTest = new TheroieTest()
+            {
+                aantalFouten = 1,
+                gehaald = true,
+                afnameDatum = DateTime.Now
+            };
+
+            RijTest rijTest = new RijTest()
+            {
+                gehaald = true,
+                afnameDatum = DateTime.Now,
+            };
+
+            Student student1 = new Student()
+            {
+                naam = "bob",
+                leeftijd = 30,
+                lespakket = lesPakket,
+                leraar = rijleraar,
+                theorieTest = theorieTest,
+                RijTest = rijTest
+            };
+
+            LesUur lesUur1 = new LesUur()
+            {
+                auto = auto1,
+                rijleraar = rijleraar,
+                tijd = 1130,
+                student = student1
+            };
+
         }
 
     }
