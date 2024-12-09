@@ -37,7 +37,7 @@ namespace constructors
                 quizVraagAntwoord.goed = false;
                 Console.WriteLine("FOUT! je bent tanto dom");
             }
-        }
+        }  
         internal void Score(int add) 
         {
             score =+ add;
